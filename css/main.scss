@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+//COLORS
+$header: #A5D3DB;
+$backsite: #fff;
+$works: #95d3a4;
+
+
+@font-face {
+    font-family: 'Trump';
+    src: url('../css/typo/Trump Town Pro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {font-family: 'Open Sans', sans-serif; background: $backsite;}
+* {box-sizing: border-box;}
+.main-wrapper {width: 80%; margin: 0 auto;}
+
+//HEADER SECTION
+.header {
+  background-color: $header;
+  .main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+}
+
+.header__logo {
+  .header__logo-link {
+    font-family: 'Trump';
+    font-size: 50px;
+    text-decoration: none;
+    color: #3A494C;
+    padding: 15px;
+    .fa-heart{font-size: 45px;}
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 650px;
+  .header__nav--link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3A494C;
+    padding: 15px 18px;
+    border-radius: 10px;
+    &:first-child {background-color: #3A494C; color: $header;}
+    &:hover {background-color: #3A494C; color: $header;}
+  }
+}
+
+//CAROUSEL SECTION
+.section__carousel {
+      background: $header;
+      padding: 0 0 143px 0;
+  .carousel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.section__h2 {
+    font-family: 'Trump';
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 1px 1px #aebec1;
+}
+
+.section__carousel-selectors {
+  text-align: center;
+  .carousel-tab {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    &:first-child {
+      background-color: #fff;
+    }
+    &:nth-child(2) {
+    margin: 0 8px;
+  }
+  }
+}
+
+.section__pilars {
+  padding: 112px 0;
+  .pilars-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.pilars-section__box {
+    text-align: center;
+    flex-basis: 450px;
+    .first-image {background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic1.png");}
+    .second-image {background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic2.png");}
+    .third-image {background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic4.png");}
+    .section-box__img {
+      height: 134px;
+      background-position: center;
+      background-repeat: no-repeat;
+      a {display: block; width: 100%; height: 100%; }
+    }
+    .section-box__heading {
+      margin: 20px 0;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .section-box__text {
+      color: #5E5E5E;
+      line-height: 24px;
+      font-weight: 900;
+    }
+  }
+
+.section__works {
+  background: $works;
+  padding: 77px 0 80px;
+  .section-woks__title {
+    text-align: center;
+    font-family: 'Trump';
+    font-size: 72px;
+    line-height: 80px;
+    color: #fff;}
+  .section-works__paragraph {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 38px;
+    color: #eee;
+    font-weight: 900;
+    line-height: 22px;
+  }
+}
+  .works-gallery__selector {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    flex-basis: 100px;
+    flex-wrap: wrap;
+    .gallery-selector__item {
+      color: #fff;
+      letter-spacing: -1px;
+      padding: 10px 20px;
+      text-decoration: none;
+      &:first-child {
+      background: #7EBD8C;
+    }
+  }
+}
+
+.works__gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .works__gallery--item {
+    width: 22%;
+    margin: 2% 2% 2% 0;
+  img {
+    display: block;
+    width: 100%;
+    }
+  }
+}

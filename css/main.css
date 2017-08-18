@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Trump';
+  src: url("../css/typo/Trump Town Pro.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+/* line 16, main.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff; }
+
+/* line 17, main.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 18, main.scss */
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 21, main.scss */
+.header {
+  background-color: #A5D3DB; }
+  /* line 23, main.scss */
+  .header .main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 40px 0; }
+
+/* line 33, main.scss */
+.header__logo .header__logo-link {
+  font-family: 'Trump';
+  font-size: 50px;
+  text-decoration: none;
+  color: #3A494C;
+  padding: 15px; }
+  /* line 39, main.scss */
+  .header__logo .header__logo-link .fa-heart {
+    font-size: 45px; }
+
+/* line 43, main.scss */
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 650px;
+      flex-basis: 650px; }
+  /* line 47, main.scss */
+  .header__nav .header__nav--link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3A494C;
+    padding: 15px 18px;
+    border-radius: 10px; }
+    /* line 54, main.scss */
+    .header__nav .header__nav--link:first-child {
+      background-color: #3A494C;
+      color: #A5D3DB; }
+    /* line 55, main.scss */
+    .header__nav .header__nav--link:hover {
+      background-color: #3A494C;
+      color: #A5D3DB; }
+
+/* line 60, main.scss */
+.section__carousel {
+  background: #A5D3DB;
+  padding: 0 0 143px 0; }
+  /* line 63, main.scss */
+  .section__carousel .carousel-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+/* line 70, main.scss */
+.section__h2 {
+  font-family: 'Trump';
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 1px 1px #aebec1; }
+
+/* line 77, main.scss */
+.section__carousel-selectors {
+  text-align: center; }
+  /* line 79, main.scss */
+  .section__carousel-selectors .carousel-tab {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #fff;
+    border-radius: 100%; }
+    /* line 85, main.scss */
+    .section__carousel-selectors .carousel-tab:first-child {
+      background-color: #fff; }
+    /* line 88, main.scss */
+    .section__carousel-selectors .carousel-tab:nth-child(2) {
+      margin: 0 8px; }
+
+/* line 94, main.scss */
+.section__pilars {
+  padding: 112px 0; }
+  /* line 96, main.scss */
+  .section__pilars .pilars-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+/* line 103, main.scss */
+.pilars-section__box {
+  text-align: center;
+  -ms-flex-preferred-size: 450px;
+      flex-basis: 450px; }
+  /* line 106, main.scss */
+  .pilars-section__box .first-image {
+    background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic1.png"); }
+  /* line 107, main.scss */
+  .pilars-section__box .second-image {
+    background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic2.png"); }
+  /* line 108, main.scss */
+  .pilars-section__box .third-image {
+    background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic4.png"); }
+  /* line 109, main.scss */
+  .pilars-section__box .section-box__img {
+    height: 134px;
+    background-position: center;
+    background-repeat: no-repeat; }
+    /* line 113, main.scss */
+    .pilars-section__box .section-box__img a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  /* line 115, main.scss */
+  .pilars-section__box .section-box__heading {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 900; }
+  /* line 120, main.scss */
+  .pilars-section__box .section-box__text {
+    color: #5E5E5E;
+    line-height: 24px;
+    font-weight: 900; }
+
+/* line 127, main.scss */
+.section__works {
+  background: #95d3a4;
+  padding: 77px 0 80px; }
+  /* line 130, main.scss */
+  .section__works .section-woks__title {
+    text-align: center;
+    font-family: 'Trump';
+    font-size: 72px;
+    line-height: 80px;
+    color: #fff; }
+  /* line 136, main.scss */
+  .section__works .section-works__paragraph {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 38px;
+    color: #eee;
+    font-weight: 900;
+    line-height: 22px; }
+
+/* line 146, main.scss */
+.works-gallery__selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 600px;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  /* line 152, main.scss */
+  .works-gallery__selector .gallery-selector__item {
+    color: #fff;
+    letter-spacing: -1px;
+    padding: 10px 20px;
+    text-decoration: none; }
+    /* line 157, main.scss */
+    .works-gallery__selector .gallery-selector__item:first-child {
+      background: #7EBD8C; }
+
+/* line 163, main.scss */
+.works__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  /* line 167, main.scss */
+  .works__gallery .works__gallery--item {
+    width: 22%;
+    margin: 2% 2% 2% 0; }
+    /* line 170, main.scss */
+    .works__gallery .works__gallery--item img {
+      display: block;
+      width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
