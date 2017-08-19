@@ -432,24 +432,31 @@ body {
     color: #D3D0D0; }
 
 /* line 373, main.scss */
-.contact__form input {
+.contact__form * {
   margin: 0 auto;
   display: block;
   border: none;
-  border-radius: 10px;
-  width: 60%;
-  margin-bottom: 20px; }
-/* line 381, main.scss */
+  border-radius: 10px; }
+/* line 379, main.scss */
 .contact__form .contact__form--name {
-  height: 40px; }
+  height: 40px;
+  margin-bottom: 20px;
+  width: 60%; }
 /* line 384, main.scss */
 .contact__form .contact__form--email {
-  height: 40px; }
-/* line 387, main.scss */
+  height: 40px;
+  margin-bottom: 20px;
+  width: 60%; }
+/* line 389, main.scss */
 .contact__form .contact__form--message {
-  height: 80px; }
+  height: 80px;
+  margin-bottom: 20px;
+  width: 60%; }
+/* line 394, main.scss */
+.contact__form .contact__form--button {
+  padding: 30px; }
 
-/* line 395, main.scss */
+/* line 402, main.scss */
 .section__footer {
   background: #3C3C3C;
   padding: 77px 0 80px; }
