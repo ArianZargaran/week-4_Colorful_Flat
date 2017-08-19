@@ -5,6 +5,8 @@ $header: #A5D3DB;
 $backsite: #fff;
 $works: #95d3a4;
 $team: #e1b7c5;
+$templates: #F0F1F0;
+$contact: #3C3C3C;
 
 
 @font-face {
@@ -92,6 +94,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
   }
 }
 
+//PILARS SECTION
 .section__pilars {
   padding: 112px 0;
   .pilars-wrapper {
@@ -103,7 +106,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
 
 .pilars-section__box {
     text-align: center;
-    flex-basis: 450px;
+    flex-basis: 300px;
     .first-image {background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic1.png");}
     .second-image {background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic2.png");}
     .third-image {background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic4.png");}
@@ -178,6 +181,65 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
   }
 }
 
+//SECTION__TEMPLATES
+.section__templates {
+  background: $templates;
+  padding: 77px 0 80px;
+  .templates__top-box {
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    .templates-box__text {
+      margin-left: 2%;
+      a {
+        background-color: #9AD4A6;
+      }
+    }
+  }
+  .templates__bottom-box {
+    padding-top: 60px;
+    .templates-box__text {
+      margin-right: 2%;
+      }
+       a {
+         background-color: #A5D3DB;
+       }
+    }
+}
+
+.section__templates--box {
+  display: flex;
+  .templates-box__img {
+    min-width: 336px;
+    height:  268px;
+    border-radius: 17px;
+    background: url('https://p.w3layouts.com/demos/colorful_flat/web/images/blog-pic1.png') no-repeat;
+  }
+  .templates-box__text {
+    .templates__text--heading {
+      font-size: 30px;
+      font-weight: 800;
+      padding: 5px 0 20px;
+      color: rgba(0,0,0,.6);
+    }
+    .templates__text--paragraph {
+      font-size: 22px;
+      line-height: 25px;
+      padding-bottom: 30px;
+      color: rgba(0,0,0,.7);
+      font-weight: 400;
+    }
+    .templates__text--button {
+      display: inline-block;
+      padding: 25px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
 //TEAM SECTION
 .section__team {
     background: $team;
@@ -243,27 +305,94 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
     }
   }
 
+//POSTS SECTION
 .section__posts {
   background: #b7d5e0;
   padding: 77px 0 80px;
 .posts-wrapper {
   padding: 65px 0 0 0;
   display: flex;
-  .posts-section__box {
-    background: #fff;
-    text-align: center;
-    width: 33%;
-    }
+  justify-content: space-between;
   }
 }
 
-.posts-section__icon {
-  background-color: #E9E9E9;
-  margin: 0 auto;
-  height: 213px;
-  display: block;
-  background-image: url("https://p.w3layouts.com/demos/colorful_flat/web/images/post-icon.png");
-  background-repeat: no-repeat;
-  background-size: 80px 80px;
-  background-position: center center;
+.posts-section__box {
+  background: #fff;
+  text-align: center;
+  width: 30%;
+  .posts-section__icon {
+    background-color: #E9E9E9;
+    margin: 0 auto;
+    height: 213px;
+    display: block;
+    background-image: url("https://p.w3layouts.com/demos/colorful_flat/web/images/post-icon.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center center;}
+    .section-box__heading {
+      padding: 25px 0 5px 0;
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .section-box__date {
+      font-style: italic;
+    }
+    .section-box__paragraph {
+      margin: 0 auto;
+      padding: 15px 5px;
+      color: #909090;
+      width: 90%;
+      font-weight: 900;
+      line-height: 25px;
+    }
+  }
+
+  .section__posts-cta {
+    display: block;
+    text-align: center;
+    padding: 28px 70px;
+    margin: 60px auto 0;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: -.5px;
+  }
+
+///HERE
+//CONTACT SECTION
+  .section__contact {
+      background: $contact;
+      padding: 77px 0 80px;
+      .title {color: #D3D0D0;}
+      .claim {color: #D3D0D0;}
+  }
+
+  .contact__form {
+    input {
+      margin: 0 auto;
+      display: block;
+      border: none;
+      border-radius: 10px;
+      width: 60%;
+      margin-bottom: 20px;
+    }
+    .contact__form--name {
+      height: 40px;
+    }
+    .contact__form--email {
+      height: 40px;
+    }
+    .contact__form--message {
+      height: 80px;
+    }
+  }
+
+
+
+//FOOTER SECTION
+  .section__footer {
+      background: $contact;
+      padding: 77px 0 80px;
   }

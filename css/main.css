@@ -3,25 +3,25 @@
   src: url("../css/typo/Trump Town Pro.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
-/* line 17, main.scss */
+/* line 19, main.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   background: #fff; }
 
-/* line 18, main.scss */
+/* line 20, main.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-/* line 19, main.scss */
+/* line 21, main.scss */
 .main-wrapper {
   width: 80%;
   margin: 0 auto; }
 
-/* line 22, main.scss */
+/* line 24, main.scss */
 .header {
   background-color: #A5D3DB; }
-  /* line 24, main.scss */
+  /* line 26, main.scss */
   .header .main-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -36,18 +36,18 @@ body {
         flex-wrap: wrap;
     padding: 40px 0; }
 
-/* line 34, main.scss */
+/* line 36, main.scss */
 .header__logo .header__logo-link {
   font-family: 'Trump';
   font-size: 50px;
   text-decoration: none;
   color: #3A494C;
   padding: 15px; }
-  /* line 40, main.scss */
+  /* line 42, main.scss */
   .header__logo .header__logo-link .fa-heart {
     font-size: 45px; }
 
-/* line 44, main.scss */
+/* line 46, main.scss */
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +57,7 @@ body {
           justify-content: space-between;
   -ms-flex-preferred-size: 650px;
       flex-basis: 650px; }
-  /* line 48, main.scss */
+  /* line 50, main.scss */
   .header__nav .header__nav--link {
     text-decoration: none;
     font-size: 20px;
@@ -65,20 +65,20 @@ body {
     color: #3A494C;
     padding: 15px 18px;
     border-radius: 10px; }
-    /* line 55, main.scss */
+    /* line 57, main.scss */
     .header__nav .header__nav--link:first-child {
       background-color: #3A494C;
       color: #A5D3DB; }
-    /* line 56, main.scss */
+    /* line 58, main.scss */
     .header__nav .header__nav--link:hover {
       background-color: #3A494C;
       color: #A5D3DB; }
 
-/* line 61, main.scss */
+/* line 63, main.scss */
 .section__carousel {
   background: #A5D3DB;
   padding: 0 0 143px 0; }
-  /* line 64, main.scss */
+  /* line 66, main.scss */
   .section__carousel .carousel-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -92,34 +92,34 @@ body {
         -ms-flex-align: center;
             align-items: center; }
 
-/* line 71, main.scss */
+/* line 73, main.scss */
 .section__h2 {
   font-family: 'Trump';
   font-size: 80px;
   color: #fff;
   text-shadow: 1px 1px #aebec1; }
 
-/* line 78, main.scss */
+/* line 80, main.scss */
 .section__carousel-selectors {
   text-align: center; }
-  /* line 80, main.scss */
+  /* line 82, main.scss */
   .section__carousel-selectors .carousel-tab {
     display: inline-block;
     height: 20px;
     width: 20px;
     border: 2px solid #fff;
     border-radius: 100%; }
-    /* line 86, main.scss */
+    /* line 88, main.scss */
     .section__carousel-selectors .carousel-tab:first-child {
       background-color: #fff; }
-    /* line 89, main.scss */
+    /* line 91, main.scss */
     .section__carousel-selectors .carousel-tab:nth-child(2) {
       margin: 0 8px; }
 
-/* line 95, main.scss */
+/* line 98, main.scss */
 .section__pilars {
   padding: 112px 0; }
-  /* line 97, main.scss */
+  /* line 100, main.scss */
   .section__pilars .pilars-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -130,47 +130,47 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
-/* line 104, main.scss */
+/* line 107, main.scss */
 .pilars-section__box {
   text-align: center;
-  -ms-flex-preferred-size: 450px;
-      flex-basis: 450px; }
-  /* line 107, main.scss */
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px; }
+  /* line 110, main.scss */
   .pilars-section__box .first-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic1.png"); }
-  /* line 108, main.scss */
+  /* line 111, main.scss */
   .pilars-section__box .second-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic2.png"); }
-  /* line 109, main.scss */
+  /* line 112, main.scss */
   .pilars-section__box .third-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic4.png"); }
-  /* line 110, main.scss */
+  /* line 113, main.scss */
   .pilars-section__box .section-box__img {
     height: 134px;
     background-position: center;
     background-repeat: no-repeat; }
-    /* line 114, main.scss */
+    /* line 117, main.scss */
     .pilars-section__box .section-box__img a {
       display: block;
       width: 100%;
       height: 100%; }
-  /* line 116, main.scss */
+  /* line 119, main.scss */
   .pilars-section__box .section-box__heading {
     margin: 20px 0;
     font-size: 20px;
     font-weight: 900; }
-  /* line 121, main.scss */
+  /* line 124, main.scss */
   .pilars-section__box .section-box__text {
     color: #5E5E5E;
     line-height: 24px;
     font-weight: 900; }
 
-/* line 128, main.scss */
+/* line 131, main.scss */
 .section__works {
   background: #95d3a4;
   padding: 77px 0 80px; }
 
-/* line 134, main.scss */
+/* line 137, main.scss */
 .title {
   text-align: center;
   font-family: 'Trump';
@@ -178,7 +178,7 @@ body {
   line-height: 80px;
   color: #fff; }
 
-/* line 140, main.scss */
+/* line 143, main.scss */
 .claim {
   text-align: center;
   width: 40%;
@@ -188,7 +188,7 @@ body {
   font-weight: 900;
   line-height: 22px; }
 
-/* line 150, main.scss */
+/* line 153, main.scss */
 .works-gallery__selector {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,17 +201,17 @@ body {
       flex-basis: 100px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  /* line 156, main.scss */
+  /* line 159, main.scss */
   .works-gallery__selector .gallery-selector__item {
     color: #fff;
     letter-spacing: -1px;
     padding: 10px 20px;
     text-decoration: none; }
-    /* line 161, main.scss */
+    /* line 164, main.scss */
     .works-gallery__selector .gallery-selector__item:first-child {
       background: #7EBD8C; }
 
-/* line 167, main.scss */
+/* line 170, main.scss */
 .works__gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,41 +221,99 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  /* line 171, main.scss */
+  /* line 174, main.scss */
   .works__gallery .works__gallery--item {
     width: 22%;
     margin: 2% 2% 2% 0; }
-    /* line 174, main.scss */
+    /* line 177, main.scss */
     .works__gallery .works__gallery--item img {
       display: block;
       width: 100%; }
 
-/* line 182, main.scss */
+/* line 185, main.scss */
+.section__templates {
+  background: #F0F1F0;
+  padding: 77px 0 80px; }
+  /* line 188, main.scss */
+  .section__templates .templates__top-box {
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    /* line 191, main.scss */
+    .section__templates .templates__top-box .templates-box__text {
+      margin-left: 2%; }
+      /* line 193, main.scss */
+      .section__templates .templates__top-box .templates-box__text a {
+        background-color: #9AD4A6; }
+  /* line 198, main.scss */
+  .section__templates .templates__bottom-box {
+    padding-top: 60px; }
+    /* line 200, main.scss */
+    .section__templates .templates__bottom-box .templates-box__text {
+      margin-right: 2%; }
+    /* line 203, main.scss */
+    .section__templates .templates__bottom-box a {
+      background-color: #A5D3DB; }
+
+/* line 209, main.scss */
+.section__templates--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 211, main.scss */
+  .section__templates--box .templates-box__img {
+    min-width: 336px;
+    height: 268px;
+    border-radius: 17px;
+    background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/blog-pic1.png") no-repeat; }
+  /* line 218, main.scss */
+  .section__templates--box .templates-box__text .templates__text--heading {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 5px 0 20px;
+    color: rgba(0, 0, 0, 0.6); }
+  /* line 224, main.scss */
+  .section__templates--box .templates-box__text .templates__text--paragraph {
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400; }
+  /* line 231, main.scss */
+  .section__templates--box .templates-box__text .templates__text--button {
+    display: inline-block;
+    padding: 25px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none; }
+
+/* line 244, main.scss */
 .section__team {
   background: #e1b7c5;
   padding: 77px 0 80px; }
 
-/* line 187, main.scss */
+/* line 249, main.scss */
 .team-wrapper {
   padding: 65px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 192, main.scss */
+/* line 254, main.scss */
 .team-section__box {
   text-align: center;
   width: 33%;
   background-color: white; }
-  /* line 196, main.scss */
+  /* line 258, main.scss */
   .team-section__box:nth-child(2) {
     margin: 0 10%; }
-  /* line 199, main.scss */
+  /* line 261, main.scss */
   .team-section__box .profile-image {
     height: 213px;
     background-color: #E9E9E9;
     margin: 0 auto; }
-    /* line 203, main.scss */
+    /* line 265, main.scss */
     .team-section__box .profile-image a {
       display: block;
       height: 100%;
@@ -263,28 +321,28 @@ body {
       background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/people-pic.png") no-repeat;
       background-size: 80px 80px;
       background-position: center center; }
-  /* line 212, main.scss */
+  /* line 274, main.scss */
   .team-section__box .section-box__name {
     background-color: #fff;
     padding: 20px 0 10px;
     font-size: 25px;
     font-weight: 900;
     font-family: "Trump"; }
-  /* line 219, main.scss */
+  /* line 281, main.scss */
   .team-section__box .section-box__charge {
     padding: 10px 0;
     font-weight: 900;
     font-size: 20px; }
-  /* line 224, main.scss */
+  /* line 286, main.scss */
   .team-section__box .section-box__text {
     padding: 10px;
     color: #8F8F8F;
     line-height: 22px;
     font-weight: 600; }
-  /* line 230, main.scss */
+  /* line 292, main.scss */
   .team-section__box .section__social {
     padding: 10px 0 30px 0; }
-    /* line 232, main.scss */
+    /* line 294, main.scss */
     .team-section__box .section__social .section__social-item {
       padding: 10px;
       height: 46px;
@@ -292,42 +350,108 @@ body {
       font-size: 30px;
       border-radius: 100%;
       color: #fff; }
-      /* line 239, main.scss */
+      /* line 301, main.scss */
       .team-section__box .section__social .section__social-item:nth-child(1) {
         background: #3234a3; }
-      /* line 240, main.scss */
+      /* line 302, main.scss */
       .team-section__box .section__social .section__social-item:nth-child(2) {
         background: #4ba5fa;
         margin: 0 10px; }
-      /* line 241, main.scss */
+      /* line 303, main.scss */
       .team-section__box .section__social .section__social-item:nth-child(3) {
         background: #ca0034; }
 
-/* line 246, main.scss */
+/* line 309, main.scss */
 .section__posts {
   background: #b7d5e0;
   padding: 77px 0 80px; }
-  /* line 249, main.scss */
+  /* line 312, main.scss */
   .section__posts .posts-wrapper {
     padding: 65px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-    /* line 252, main.scss */
-    .section__posts .posts-wrapper .posts-section__box {
-      background: #fff;
-      text-align: center;
-      width: 33%; }
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
-/* line 260, main.scss */
-.posts-section__icon {
-  background-color: #E9E9E9;
-  margin: 0 auto;
-  height: 213px;
+/* line 319, main.scss */
+.posts-section__box {
+  background: #fff;
+  text-align: center;
+  width: 30%; }
+  /* line 323, main.scss */
+  .posts-section__box .posts-section__icon {
+    background-color: #E9E9E9;
+    margin: 0 auto;
+    height: 213px;
+    display: block;
+    background-image: url("https://p.w3layouts.com/demos/colorful_flat/web/images/post-icon.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center center; }
+  /* line 332, main.scss */
+  .posts-section__box .section-box__heading {
+    padding: 25px 0 5px 0;
+    font-size: 30px;
+    font-weight: 900; }
+  /* line 337, main.scss */
+  .posts-section__box .section-box__date {
+    font-style: italic; }
+  /* line 340, main.scss */
+  .posts-section__box .section-box__paragraph {
+    margin: 0 auto;
+    padding: 15px 5px;
+    color: #909090;
+    width: 90%;
+    font-weight: 900;
+    line-height: 25px; }
+
+/* line 350, main.scss */
+.section__posts-cta {
   display: block;
-  background-image: url("https://p.w3layouts.com/demos/colorful_flat/web/images/post-icon.png");
-  background-repeat: no-repeat;
-  background-size: 80px 80px;
-  background-position: center center; }
+  text-align: center;
+  padding: 28px 70px;
+  margin: 60px auto 0;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: -.5px; }
+
+/* line 365, main.scss */
+.section__contact {
+  background: #3C3C3C;
+  padding: 77px 0 80px; }
+  /* line 368, main.scss */
+  .section__contact .title {
+    color: #D3D0D0; }
+  /* line 369, main.scss */
+  .section__contact .claim {
+    color: #D3D0D0; }
+
+/* line 373, main.scss */
+.contact__form input {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  margin-bottom: 20px; }
+/* line 381, main.scss */
+.contact__form .contact__form--name {
+  height: 40px; }
+/* line 384, main.scss */
+.contact__form .contact__form--email {
+  height: 40px; }
+/* line 387, main.scss */
+.contact__form .contact__form--message {
+  height: 80px; }
+
+/* line 395, main.scss */
+.section__footer {
+  background: #3C3C3C;
+  padding: 77px 0 80px; }
 
 /*# sourceMappingURL=main.css.map */
