@@ -436,27 +436,42 @@ body {
   margin: 0 auto;
   display: block;
   border: none;
-  border-radius: 10px; }
-/* line 379, main.scss */
+  border-radius: 10px;
+  outline: none;
+  padding-left: 5px;
+  font-size: 24px; }
+  /* line 381, main.scss */
+  .contact__form *::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600; }
+  .contact__form *:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600; }
+  .contact__form *::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600; }
+/* line 386, main.scss */
 .contact__form .contact__form--name {
-  height: 40px;
+  height: 70px;
   margin-bottom: 20px;
   width: 60%; }
-/* line 384, main.scss */
+/* line 391, main.scss */
 .contact__form .contact__form--email {
-  height: 40px;
+  height: 70px;
   margin-bottom: 20px;
   width: 60%; }
-/* line 389, main.scss */
+/* line 396, main.scss */
 .contact__form .contact__form--message {
-  height: 80px;
+  height: 220px;
+  width: 60%;
   margin-bottom: 20px;
-  width: 60%; }
-/* line 394, main.scss */
+  resize: none;
+  padding-top: 16px; }
+/* line 403, main.scss */
 .contact__form .contact__form--button {
-  padding: 30px; }
+  padding: 30px 0; }
 
-/* line 402, main.scss */
+/* line 411, main.scss */
 .section__footer {
   background: #3C3C3C;
   padding: 77px 0 80px; }
