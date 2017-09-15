@@ -1,67 +1,21 @@
 @charset "UTF-8";
 
-//COLORS
-$header: #A5D3DB;
-$backsite: #fff;
-$works: #95d3a4;
-$team: #e1b7c5;
-$templates: #F0F1F0;
-$contact: #3C3C3C;
+@import 'colors';
+@import 'layout';
+@import 'fonts';
 
-
-@font-face {
-    font-family: 'Trump';
-    src: url('../css/typo/Trump Town Pro.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {font-family: 'Open Sans', sans-serif; background: $backsite;}
+body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 * {box-sizing: border-box;}
-.main-wrapper {width: 80%; margin: 0 auto;}
 
-//HEADER SECTION
-.header {
-  background-color: $header;
-  .main-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px 0;
-  }
-}
+@import 'components/cf_main-wrapper';
+@import 'components/cf_header';
 
-.header__logo {
-  .header__logo-link {
-    font-family: 'Trump';
-    font-size: 50px;
-    text-decoration: none;
-    color: #3A494C;
-    padding: 15px;
-    .fa-heart{font-size: 45px;}
-  }
-}
-
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 650px;
-  .header__nav--link {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    color: #3A494C;
-    padding: 15px 18px;
-    border-radius: 10px;
-    &:first-child {background-color: #3A494C; color: $header;}
-    &:hover {background-color: #3A494C; color: $header;}
-  }
-}
+@import 'components/cf_header-logo';
+@import 'components/cf_header-nav';
 
 //CAROUSEL SECTION
 .section__carousel {
-      background: $header;
+      background: var(--header);
       padding: 0 0 143px 0;
   .carousel-wrapper {
     display: flex;
@@ -129,7 +83,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
   }
 
 .section__works {
-  background: $works;
+  background: var(--works);
   padding: 77px 0 80px;
 }
 
@@ -183,7 +137,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
 
 //SECTION__TEMPLATES
 .section__templates {
-  background: $templates;
+  background: var(--templates);
   padding: 77px 0 80px;
   .templates__top-box {
     padding-bottom: 60px;
@@ -246,7 +200,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
 
 //TEAM SECTION
 .section__team {
-    background: $team;
+    background: var(--team);
     padding: 77px 0 80px;
 }
 
@@ -367,7 +321,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
 ///HERE
 //CONTACT SECTION
   .section__contact {
-      background: $contact;
+      background: var(--contact);
       padding: 77px 0 80px;
       .title {color: #D3D0D0;}
       .claim {color: #D3D0D0;}
@@ -416,7 +370,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
 
 //FOOTER SECTION
   .section__footer {
-      background: $contact;
+      background: var(--contact);
     .footer-wrapper {
       border-top: .4px solid rgba(0,0,0,.2);
       padding: 15px 0;
@@ -435,7 +389,7 @@ body {font-family: 'Open Sans', sans-serif; background: $backsite;}
     display: inline-block;
     text-decoration: none;
     font-size: 35px;
-    color: $contact;
+    color: var(--contact);
     background: rgba(225,225,225,.2);
     padding: 12px;
     border-radius: 100%;

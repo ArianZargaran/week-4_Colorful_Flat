@@ -1,0 +1,13 @@
+//MAIN WRAPPER is pressent in several sections to center their specific content
+@import '../layout';
+
+.cf_main-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  @include MQ(M) {
+    width: 90%;
+    }
+  @include MQ(L) {
+    width: 80%;
+    }
+}

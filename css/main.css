@@ -1,176 +1,179 @@
+:root {
+  --header: #A5D3DB;
+  --backsite: #fff;
+  --works: #95d3a4;
+  --team: #e1b7c5;
+  --templates: #F0F1F0;
+  --contact: #3C3C3C;
+  --heading_text: #3A494C;
+  --nav-link: #3A494C; }
+
 @font-face {
   font-family: 'Trump';
   src: url("../css/typo/Trump Town Pro.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
-/* line 19, main.scss */
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #fff; }
+  background: var(--backsite); }
 
-/* line 20, main.scss */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
-/* line 21, main.scss */
-.main-wrapper {
-  width: 80%;
-  margin: 0 auto; }
+.cf_main-wrapper {
+  margin: 0 auto;
+  width: 100%; }
+  @media only screen and (min-width: 765.01px) {
+    .cf_main-wrapper {
+      background: lavender;
+      width: 90%; } }
+  @media only screen and (min-width: 1158.01px) {
+    .cf_main-wrapper {
+      width: 80%; } }
 
-/* line 24, main.scss */
-.header {
-  background-color: #A5D3DB; }
-  /* line 26, main.scss */
-  .header .main-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.cf_header {
+  background-color: var(--header); }
+  .cf_header .cf_header-wrapper {
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column;
     padding: 40px 0; }
+    @media only screen and (min-width: 765.01px) {
+      .cf_header .cf_header-wrapper {
+        background: lavender; } }
+    @media only screen and (min-width: 1158.01px) {
+      .cf_header .cf_header-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; } }
 
-/* line 36, main.scss */
-.header__logo .header__logo-link {
-  font-family: 'Trump';
-  font-size: 50px;
-  text-decoration: none;
-  color: #3A494C;
-  padding: 15px; }
-  /* line 42, main.scss */
-  .header__logo .header__logo-link .fa-heart {
-    font-size: 45px; }
-
-/* line 46, main.scss */
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: 650px;
-      flex-basis: 650px; }
-  /* line 50, main.scss */
-  .header__nav .header__nav--link {
+.cf_header-logo {
+  margin: 0 auto;
+  padding-bottom: 10px; }
+  @media only screen and (min-width: 1158.01px) {
+    .cf_header-logo {
+      margin: 0; } }
+  .cf_header-logo .cf_header-logo_link {
+    font-family: 'Trump';
     text-decoration: none;
+    color: var(--heading_text);
+    font-size: 50px; }
+    @media only screen and (min-width: 765.01px) {
+      .cf_header-logo .cf_header-logo_link {
+        background: lavender; } }
+    .cf_header-logo .cf_header-logo_link .fa-heart {
+      font-size: 45px; }
+      @media only screen and (min-width: 765.01px) {
+        .cf_header-logo .cf_header-logo_link .fa-heart {
+          background: lavender; } }
+      @media only screen and (min-width: 1158.01px) {
+        .cf_header-logo .cf_header-logo_link .fa-heart {
+          font-size: 45px; } }
+
+.cf_header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  @media only screen and (min-width: 765.01px) {
+    .cf_header__nav {
+      background: lavender;
+      flex-direction: row; } }
+  .cf_header__nav .cf_header__nav--link {
+    display: block;
+    text-decoration: none;
+    color: var(--nav-link);
+    border-radius: 10px;
+    text-align: center;
     font-size: 20px;
     font-weight: 600;
-    color: #3A494C;
-    padding: 15px 18px;
-    border-radius: 10px; }
-    /* line 57, main.scss */
-    .header__nav .header__nav--link:first-child {
-      background-color: #3A494C;
-      color: #A5D3DB; }
-    /* line 58, main.scss */
-    .header__nav .header__nav--link:hover {
-      background-color: #3A494C;
-      color: #A5D3DB; }
+    padding: 10px 18px;
+    border: 1px solid transparent; }
+    @media only screen and (min-width: 765.01px) {
+      .cf_header__nav .cf_header__nav--link {
+        background: lavender;
+        display: flex; } }
+    @media only screen and (min-width: 1158.01px) {
+      .cf_header__nav .cf_header__nav--link {
+        margin-right: 5px; } }
+    @media only screen and (min-width: 765.01px) {
+      .cf_header__nav .cf_header__nav--link:first-child {
+        background: lavender;
+        background-color: var(--nav-link);
+        color: var(--header); } }
+    .cf_header__nav .cf_header__nav--link:hover {
+      border: 1px solid var(--nav-link); }
+      @media only screen and (min-width: 765.01px) {
+        .cf_header__nav .cf_header__nav--link:hover {
+          background: lavender;
+          background-color: var(--nav-link);
+          color: var(--header);
+          border: 1px solid transparent; } }
 
-/* line 63, main.scss */
 .section__carousel {
-  background: #A5D3DB;
+  background: var(--header);
   padding: 0 0 143px 0; }
-  /* line 66, main.scss */
   .section__carousel .carousel-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; }
 
-/* line 73, main.scss */
 .section__h2 {
   font-family: 'Trump';
   font-size: 80px;
   color: #fff;
   text-shadow: 1px 1px #aebec1; }
 
-/* line 80, main.scss */
 .section__carousel-selectors {
   text-align: center; }
-  /* line 82, main.scss */
   .section__carousel-selectors .carousel-tab {
     display: inline-block;
     height: 20px;
     width: 20px;
     border: 2px solid #fff;
     border-radius: 100%; }
-    /* line 88, main.scss */
     .section__carousel-selectors .carousel-tab:first-child {
       background-color: #fff; }
-    /* line 91, main.scss */
     .section__carousel-selectors .carousel-tab:nth-child(2) {
       margin: 0 8px; }
 
-/* line 98, main.scss */
 .section__pilars {
   padding: 112px 0; }
-  /* line 100, main.scss */
   .section__pilars .pilars-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
 
-/* line 107, main.scss */
 .pilars-section__box {
   text-align: center;
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px; }
-  /* line 110, main.scss */
+  flex-basis: 300px; }
   .pilars-section__box .first-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic1.png"); }
-  /* line 111, main.scss */
   .pilars-section__box .second-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic2.png"); }
-  /* line 112, main.scss */
   .pilars-section__box .third-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic4.png"); }
-  /* line 113, main.scss */
   .pilars-section__box .section-box__img {
     height: 134px;
     background-position: center;
     background-repeat: no-repeat; }
-    /* line 117, main.scss */
     .pilars-section__box .section-box__img a {
       display: block;
       width: 100%;
       height: 100%; }
-  /* line 119, main.scss */
   .pilars-section__box .section-box__heading {
     margin: 20px 0;
     font-size: 20px;
     font-weight: 900; }
-  /* line 124, main.scss */
   .pilars-section__box .section-box__text {
     color: #5E5E5E;
     line-height: 24px;
     font-weight: 900; }
 
-/* line 131, main.scss */
 .section__works {
-  background: #95d3a4;
+  background: var(--works);
   padding: 77px 0 80px; }
 
-/* line 137, main.scss */
 .title {
   text-align: center;
   font-family: 'Trump';
@@ -178,7 +181,6 @@ body {
   line-height: 80px;
   color: #fff; }
 
-/* line 143, main.scss */
 .claim {
   text-align: center;
   width: 40%;
@@ -188,97 +190,66 @@ body {
   font-weight: 900;
   line-height: 22px; }
 
-/* line 153, main.scss */
 .works-gallery__selector {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-width: 600px;
-  -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  /* line 159, main.scss */
+  flex-basis: 100px;
+  flex-wrap: wrap; }
   .works-gallery__selector .gallery-selector__item {
     color: #fff;
     letter-spacing: -1px;
     padding: 10px 20px;
     text-decoration: none; }
-    /* line 164, main.scss */
     .works-gallery__selector .gallery-selector__item:first-child {
       background: #7EBD8C; }
 
-/* line 170, main.scss */
 .works__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  /* line 174, main.scss */
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .works__gallery .works__gallery--item {
     width: 22%;
     margin: 2% 2% 2% 0; }
-    /* line 177, main.scss */
     .works__gallery .works__gallery--item img {
       display: block;
       width: 100%; }
 
-/* line 185, main.scss */
 .section__templates {
-  background: #F0F1F0;
+  background: var(--templates);
   padding: 77px 0 80px; }
-  /* line 188, main.scss */
   .section__templates .templates__top-box {
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-    /* line 191, main.scss */
     .section__templates .templates__top-box .templates-box__text {
       margin-left: 2%; }
-      /* line 193, main.scss */
       .section__templates .templates__top-box .templates-box__text a {
         background-color: #9AD4A6; }
-  /* line 198, main.scss */
   .section__templates .templates__bottom-box {
     padding-top: 60px; }
-    /* line 200, main.scss */
     .section__templates .templates__bottom-box .templates-box__text {
       margin-right: 2%; }
-    /* line 203, main.scss */
     .section__templates .templates__bottom-box a {
       background-color: #A5D3DB; }
 
-/* line 209, main.scss */
 .section__templates--box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
-  /* line 211, main.scss */
   .section__templates--box .templates-box__img {
     min-width: 336px;
     height: 268px;
     border-radius: 17px;
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/blog-pic1.png") no-repeat; }
-  /* line 218, main.scss */
   .section__templates--box .templates-box__text .templates__text--heading {
     font-size: 30px;
     font-weight: 800;
     padding: 5px 0 20px;
     color: rgba(0, 0, 0, 0.6); }
-  /* line 224, main.scss */
   .section__templates--box .templates-box__text .templates__text--paragraph {
     font-size: 22px;
     line-height: 25px;
     padding-bottom: 30px;
     color: rgba(0, 0, 0, 0.7);
     font-weight: 400; }
-  /* line 231, main.scss */
   .section__templates--box .templates-box__text .templates__text--button {
     display: inline-block;
     padding: 25px 20px;
@@ -287,38 +258,28 @@ body {
     font-size: 20px;
     color: #fff;
     text-decoration: none;
-    -webkit-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out; }
-    /* line 240, main.scss */
     .section__templates--box .templates-box__text .templates__text--button:hover {
       background-color: #000; }
 
-/* line 248, main.scss */
 .section__team {
-  background: #e1b7c5;
+  background: var(--team);
   padding: 77px 0 80px; }
 
-/* line 253, main.scss */
 .team-wrapper {
   padding: 65px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
-/* line 258, main.scss */
 .team-section__box {
   text-align: center;
   width: 33%;
   background-color: white; }
-  /* line 262, main.scss */
   .team-section__box:nth-child(2) {
     margin: 0 10%; }
-  /* line 265, main.scss */
   .team-section__box .profile-image {
     height: 213px;
     background-color: #E9E9E9;
     margin: 0 auto; }
-    /* line 269, main.scss */
     .team-section__box .profile-image a {
       display: block;
       height: 100%;
@@ -326,28 +287,23 @@ body {
       background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/people-pic.png") no-repeat;
       background-size: 80px 80px;
       background-position: center center; }
-  /* line 278, main.scss */
   .team-section__box .section-box__name {
     background-color: #fff;
     padding: 20px 0 10px;
     font-size: 25px;
     font-weight: 900;
     font-family: 'Trump'; }
-  /* line 285, main.scss */
   .team-section__box .section-box__charge {
     padding: 10px 0;
     font-weight: 900;
     font-size: 20px; }
-  /* line 290, main.scss */
   .team-section__box .section-box__text {
     padding: 10px;
     color: #8F8F8F;
     line-height: 22px;
     font-weight: 600; }
-  /* line 296, main.scss */
   .team-section__box .section__social {
     padding: 10px 0 30px 0; }
-    /* line 298, main.scss */
     .team-section__box .section__social .section__social-item {
       padding: 10px;
       height: 46px;
@@ -355,37 +311,26 @@ body {
       font-size: 30px;
       border-radius: 100%;
       color: #fff; }
-      /* line 305, main.scss */
       .team-section__box .section__social .section__social-item:nth-child(1) {
         background: #3234a3; }
-      /* line 306, main.scss */
       .team-section__box .section__social .section__social-item:nth-child(2) {
         background: #4ba5fa;
         margin: 0 10px; }
-      /* line 307, main.scss */
       .team-section__box .section__social .section__social-item:nth-child(3) {
         background: #ca0034; }
 
-/* line 313, main.scss */
 .section__posts {
   background: #b7d5e0;
   padding: 77px 0 80px; }
-  /* line 316, main.scss */
   .section__posts .posts-wrapper {
     padding: 65px 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    justify-content: space-between; }
 
-/* line 323, main.scss */
 .posts-section__box {
   background: #fff;
   text-align: center;
   width: 30%; }
-  /* line 327, main.scss */
   .posts-section__box .posts-section__icon {
     background-color: #E9E9E9;
     margin: 0 auto;
@@ -395,15 +340,12 @@ body {
     background-repeat: no-repeat;
     background-size: 80px 80px;
     background-position: center center; }
-  /* line 336, main.scss */
   .posts-section__box .section-box__heading {
     padding: 25px 0 5px 0;
     font-size: 30px;
     font-weight: 900; }
-  /* line 341, main.scss */
   .posts-section__box .section-box__date {
     font-style: italic; }
-  /* line 344, main.scss */
   .posts-section__box .section-box__paragraph {
     margin: 0 auto;
     padding: 15px 5px;
@@ -412,7 +354,6 @@ body {
     font-weight: 900;
     line-height: 25px; }
 
-/* line 354, main.scss */
 .section__posts-cta {
   display: block;
   text-align: center;
@@ -425,18 +366,14 @@ body {
   color: rgba(0, 0, 0, 0.6);
   letter-spacing: -.5px; }
 
-/* line 369, main.scss */
 .section__contact {
-  background: #3C3C3C;
+  background: var(--contact);
   padding: 77px 0 80px; }
-  /* line 372, main.scss */
   .section__contact .title {
     color: #D3D0D0; }
-  /* line 373, main.scss */
   .section__contact .claim {
     color: #D3D0D0; }
 
-/* line 377, main.scss */
 .contact__form * {
   margin: 0 auto;
   display: block;
@@ -446,29 +383,19 @@ body {
   padding-left: 5px;
   font-size: 24px;
   background: #fff; }
-  /* line 386, main.scss */
-  .contact__form *::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: 400; }
-  .contact__form *:-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: 400; }
   .contact__form *::placeholder {
     color: rgba(0, 0, 0, 0.4);
     font-weight: 400; }
-/* line 391, main.scss */
 .contact__form .contact__form--name {
   height: 70px;
   margin-bottom: 20px;
   padding-left: 20px;
   width: 60%; }
-/* line 397, main.scss */
 .contact__form .contact__form--email {
   height: 70px;
   margin-bottom: 20px;
   padding-left: 20px;
   width: 60%; }
-/* line 403, main.scss */
 .contact__form .contact__form--message {
   height: 220px;
   width: 60%;
@@ -476,58 +403,38 @@ body {
   padding-left: 20px;
   resize: none;
   padding-top: 16px; }
-/* line 411, main.scss */
 .contact__form .contact__form--button {
   padding: 30px 70px;
   color: rgba(0, 0, 0, 0.6); }
 
-/* line 418, main.scss */
 .section__footer {
-  background: #3C3C3C; }
-  /* line 420, main.scss */
+  background: var(--contact); }
   .section__footer .footer-wrapper {
     border-top: 0.4px solid rgba(0, 0, 0, 0.2);
     padding: 15px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
 
-/* line 430, main.scss */
 .footer__nav--social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: 250px;
-      flex-basis: 250px; }
-  /* line 434, main.scss */
+  justify-content: space-between;
+  flex-basis: 250px; }
   .footer__nav--social .footer__nav--social-item {
     display: inline-block;
     text-decoration: none;
     font-size: 35px;
-    color: #3C3C3C;
+    color: var(--contact);
     background: rgba(225, 225, 225, 0.2);
     padding: 12px;
     border-radius: 100%; }
-    /* line 442, main.scss */
     .footer__nav--social .footer__nav--social-item:nth-child(2) {
       padding: 12px 17px; }
 
-/* line 448, main.scss */
 .footer__legal {
   color: rgba(225, 225, 225, 0.6);
   padding: 12px 0; }
-  /* line 451, main.scss */
   .footer__legal .footer__legal--yellow {
     color: #FED67F; }
 

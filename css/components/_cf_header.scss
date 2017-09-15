@@ -1,0 +1,18 @@
+//HEADER SECTION
+.cf_header {
+  background-color: var(--header);
+  .cf_header-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    @include MQ(M) {
+
+    }
+    @include MQ(L) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
