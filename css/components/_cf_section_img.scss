@@ -1,0 +1,14 @@
+.cf_section_img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 325.1184834123223px;
+  padding-bottom: 25px;
+  @include MQ(M){
+    width: 422px;
+    height: 343px;
+  }
+  @include MQ(L){
+    margin: 0;
+  }
+}

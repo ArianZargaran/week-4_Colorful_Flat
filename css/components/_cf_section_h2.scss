@@ -1,0 +1,17 @@
+.cf_section_h2 {
+    font-family: 'Trump';
+    text-shadow: 1px 1px #aebec1;
+    display: block;
+    margin: 0 auto;
+    font-size: 60px;
+    color: #fff;
+    padding-bottom: 20px;
+    @include MQ(M){
+      font-size: 60px;
+    }
+    @include MQ(L){
+      display: flex;
+      margin: 0;
+      font-size: 80px;
+    }
+}

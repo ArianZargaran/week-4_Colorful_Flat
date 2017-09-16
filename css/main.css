@@ -111,7 +111,7 @@ body {
 
 .cf_section_carousel {
   background: var(--header);
-  padding: 0 0 143px 0; }
+  padding: 0 0 80px 0; }
   .cf_section_carousel .cf_carousel_wrapper {
     display: flex;
     justify-content: space-between;
@@ -125,7 +125,7 @@ body {
   margin: 0 auto;
   font-size: 60px;
   color: #fff;
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
   @media only screen and (min-width: 765.01px) {
     .cf_section_h2 {
       background: lavender;
@@ -138,10 +138,18 @@ body {
 
 .cf_section_img {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 400px;
+  height: 325.1184834123223px;
+  padding-bottom: 25px; }
   @media only screen and (min-width: 765.01px) {
     .cf_section_img {
-      background: lavender; } }
+      background: lavender;
+      width: 422px;
+      height: 343px; } }
+  @media only screen and (min-width: 1178.01px) {
+    .cf_section_img {
+      margin: 0; } }
 
 .section__carousel-selectors {
   text-align: center; }

@@ -8,49 +8,20 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 * {box-sizing: border-box;}
 
 @import 'components/cf_main-wrapper';
-@import 'components/cf_header';
 
+//HEADER SECTION
+@import 'components/cf_header';
 @import 'components/cf_header-logo';
 @import 'components/cf_header-nav';
 
+
+
 //CAROUSEL SECTION
-.cf_section_carousel {
-  background: var(--header);
-  padding: 0 0 143px 0;
-  .cf_carousel_wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-.cf_section_h2 {
-    font-family: 'Trump';
-    text-shadow: 1px 1px #aebec1;
-    display: block;
-    margin: 0 auto;
-    font-size: 60px;
-    color: #fff;
-    padding-bottom: 30px;
-    @include MQ(M){
-      font-size: 60px;
-    }
-    @include MQ(L){
-      display: flex;
-      margin: 0;
-      font-size: 80px;
-    }
-}
+@import 'components/cf_section_carousel';
+@import 'components/cf_section_h2';
+@import 'components/cf_section_img';
 
-.cf_section_img {
-  display: block;
-  margin: 0 auto;
-  @include MQ(M){
 
-  }
-  @include MQ(L){
-  }
-}
 .section__carousel-selectors {
   text-align: center;
   .carousel-tab {
@@ -64,7 +35,7 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
     }
     &:nth-child(2) {
     margin: 0 8px;
-  }
+    }
   }
 }
 
