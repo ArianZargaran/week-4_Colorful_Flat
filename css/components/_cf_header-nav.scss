@@ -1,4 +1,4 @@
-.cf_header__nav {
+.cf_header_nav {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -8,7 +8,7 @@
   @include MQ(L){
 
   }
-  .cf_header__nav--link {
+  .cf_header_nav-link {
     display: block;
     text-decoration: none;
     color: var(--nav-link);

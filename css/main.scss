@@ -14,23 +14,43 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 @import 'components/cf_header-nav';
 
 //CAROUSEL SECTION
-.section__carousel {
-      background: var(--header);
-      padding: 0 0 143px 0;
-  .carousel-wrapper {
+.cf_section_carousel {
+  background: var(--header);
+  padding: 0 0 143px 0;
+  .cf_carousel_wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
   }
 }
-.section__h2 {
+.cf_section_h2 {
     font-family: 'Trump';
-    font-size: 80px;
-    color: #fff;
     text-shadow: 1px 1px #aebec1;
+    display: block;
+    margin: 0 auto;
+    font-size: 60px;
+    color: #fff;
+    padding-bottom: 30px;
+    @include MQ(M){
+      font-size: 60px;
+    }
+    @include MQ(L){
+      display: flex;
+      margin: 0;
+      font-size: 80px;
+    }
 }
 
+.cf_section_img {
+  display: block;
+  margin: 0 auto;
+  @include MQ(M){
+
+  }
+  @include MQ(L){
+  }
+}
 .section__carousel-selectors {
   text-align: center;
   .carousel-tab {

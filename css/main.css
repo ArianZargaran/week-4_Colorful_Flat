@@ -27,7 +27,7 @@ body {
     .cf_main-wrapper {
       background: lavender;
       width: 90%; } }
-  @media only screen and (min-width: 1158.01px) {
+  @media only screen and (min-width: 1178.01px) {
     .cf_main-wrapper {
       width: 80%; } }
 
@@ -40,7 +40,7 @@ body {
     @media only screen and (min-width: 765.01px) {
       .cf_header .cf_header-wrapper {
         background: lavender; } }
-    @media only screen and (min-width: 1158.01px) {
+    @media only screen and (min-width: 1178.01px) {
       .cf_header .cf_header-wrapper {
         flex-direction: row;
         justify-content: space-between;
@@ -50,7 +50,7 @@ body {
 .cf_header-logo {
   margin: 0 auto;
   padding-bottom: 10px; }
-  @media only screen and (min-width: 1158.01px) {
+  @media only screen and (min-width: 1178.01px) {
     .cf_header-logo {
       margin: 0; } }
   .cf_header-logo .cf_header-logo_link {
@@ -66,19 +66,19 @@ body {
       @media only screen and (min-width: 765.01px) {
         .cf_header-logo .cf_header-logo_link .fa-heart {
           background: lavender; } }
-      @media only screen and (min-width: 1158.01px) {
+      @media only screen and (min-width: 1178.01px) {
         .cf_header-logo .cf_header-logo_link .fa-heart {
           font-size: 45px; } }
 
-.cf_header__nav {
+.cf_header_nav {
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
   @media only screen and (min-width: 765.01px) {
-    .cf_header__nav {
+    .cf_header_nav {
       background: lavender;
       flex-direction: row; } }
-  .cf_header__nav .cf_header__nav--link {
+  .cf_header_nav .cf_header_nav-link {
     display: block;
     text-decoration: none;
     color: var(--nav-link);
@@ -89,40 +89,59 @@ body {
     padding: 10px 18px;
     border: 1px solid transparent; }
     @media only screen and (min-width: 765.01px) {
-      .cf_header__nav .cf_header__nav--link {
+      .cf_header_nav .cf_header_nav-link {
         background: lavender;
         display: flex; } }
-    @media only screen and (min-width: 1158.01px) {
-      .cf_header__nav .cf_header__nav--link {
+    @media only screen and (min-width: 1178.01px) {
+      .cf_header_nav .cf_header_nav-link {
         margin-right: 5px; } }
     @media only screen and (min-width: 765.01px) {
-      .cf_header__nav .cf_header__nav--link:first-child {
+      .cf_header_nav .cf_header_nav-link:first-child {
         background: lavender;
         background-color: var(--nav-link);
         color: var(--header); } }
-    .cf_header__nav .cf_header__nav--link:hover {
+    .cf_header_nav .cf_header_nav-link:hover {
       border: 1px solid var(--nav-link); }
       @media only screen and (min-width: 765.01px) {
-        .cf_header__nav .cf_header__nav--link:hover {
+        .cf_header_nav .cf_header_nav-link:hover {
           background: lavender;
           background-color: var(--nav-link);
           color: var(--header);
           border: 1px solid transparent; } }
 
-.section__carousel {
+.cf_section_carousel {
   background: var(--header);
   padding: 0 0 143px 0; }
-  .section__carousel .carousel-wrapper {
+  .cf_section_carousel .cf_carousel_wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center; }
 
-.section__h2 {
+.cf_section_h2 {
   font-family: 'Trump';
-  font-size: 80px;
+  text-shadow: 1px 1px #aebec1;
+  display: block;
+  margin: 0 auto;
+  font-size: 60px;
   color: #fff;
-  text-shadow: 1px 1px #aebec1; }
+  padding-bottom: 30px; }
+  @media only screen and (min-width: 765.01px) {
+    .cf_section_h2 {
+      background: lavender;
+      font-size: 60px; } }
+  @media only screen and (min-width: 1178.01px) {
+    .cf_section_h2 {
+      display: flex;
+      margin: 0;
+      font-size: 80px; } }
+
+.cf_section_img {
+  display: block;
+  margin: 0 auto; }
+  @media only screen and (min-width: 765.01px) {
+    .cf_section_img {
+      background: lavender; } }
 
 .section__carousel-selectors {
   text-align: center; }
