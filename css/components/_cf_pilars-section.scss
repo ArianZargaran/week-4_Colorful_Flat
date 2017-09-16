@@ -1,0 +1,16 @@
+.cf_pilars-section {
+  padding: 80px 0;
+  @include MQ(M){
+    padding: 112px 0;
+  }
+  .cf_pilars-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include MQ(M){
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+}

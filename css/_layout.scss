@@ -7,12 +7,12 @@ $L:     1178.01px;
 // media queries
 @mixin MQ($canvas) {
   @if $canvas == S {
-   @media only screen and (min-width: $S) { background: green; @content;  }
+   @media only screen and (min-width: $S) { @content; }
   }
   @else if $canvas == M {
    @media only screen and (min-width: $M) { background: lavender; @content; }
   }
   @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; }
+   @media only screen and (min-width: $L) { background: green; @content; }
   }
 }

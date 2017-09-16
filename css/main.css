@@ -29,6 +29,7 @@ body {
       width: 90%; } }
   @media only screen and (min-width: 1178.01px) {
     .cf_main-wrapper {
+      background: green;
       width: 80%; } }
 
 .cf_header {
@@ -42,6 +43,7 @@ body {
         background: lavender; } }
     @media only screen and (min-width: 1178.01px) {
       .cf_header .cf_header-wrapper {
+        background: green;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -52,6 +54,7 @@ body {
   padding-bottom: 10px; }
   @media only screen and (min-width: 1178.01px) {
     .cf_header-logo {
+      background: green;
       margin: 0; } }
   .cf_header-logo .cf_header-logo_link {
     font-family: 'Trump';
@@ -61,6 +64,9 @@ body {
     @media only screen and (min-width: 765.01px) {
       .cf_header-logo .cf_header-logo_link {
         background: lavender; } }
+    @media only screen and (min-width: 1178.01px) {
+      .cf_header-logo .cf_header-logo_link {
+        background: green; } }
     .cf_header-logo .cf_header-logo_link .fa-heart {
       font-size: 45px; }
       @media only screen and (min-width: 765.01px) {
@@ -68,6 +74,7 @@ body {
           background: lavender; } }
       @media only screen and (min-width: 1178.01px) {
         .cf_header-logo .cf_header-logo_link .fa-heart {
+          background: green;
           font-size: 45px; } }
 
 .cf_header_nav {
@@ -78,6 +85,9 @@ body {
     .cf_header_nav {
       background: lavender;
       flex-direction: row; } }
+  @media only screen and (min-width: 1178.01px) {
+    .cf_header_nav {
+      background: green; } }
   .cf_header_nav .cf_header_nav-link {
     display: block;
     text-decoration: none;
@@ -94,6 +104,7 @@ body {
         display: flex; } }
     @media only screen and (min-width: 1178.01px) {
       .cf_header_nav .cf_header_nav-link {
+        background: green;
         margin-right: 5px; } }
     @media only screen and (min-width: 765.01px) {
       .cf_header_nav .cf_header_nav-link:first-child {
@@ -109,10 +120,10 @@ body {
           color: var(--header);
           border: 1px solid transparent; } }
 
-.cf_section_carousel {
+.cf_carousel-section {
   background: var(--header);
   padding: 0 0 80px 0; }
-  .cf_section_carousel .cf_carousel_wrapper {
+  .cf_carousel-section .cf_carousel_wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -132,6 +143,7 @@ body {
       font-size: 60px; } }
   @media only screen and (min-width: 1178.01px) {
     .cf_section_h2 {
+      background: green;
       display: flex;
       margin: 0;
       font-size: 80px; } }
@@ -149,50 +161,64 @@ body {
       height: 343px; } }
   @media only screen and (min-width: 1178.01px) {
     .cf_section_img {
+      background: green;
       margin: 0; } }
 
-.section__carousel-selectors {
-  text-align: center; }
-  .section__carousel-selectors .carousel-tab {
+.cf_carousel_selectors {
+  width: 85px;
+  margin: 0 auto; }
+  .cf_carousel_selectors .cf_carousel-tab {
     display: inline-block;
     height: 20px;
     width: 20px;
     border: 2px solid #fff;
     border-radius: 100%; }
-    .section__carousel-selectors .carousel-tab:first-child {
+    .cf_carousel_selectors .cf_carousel-tab:first-child {
       background-color: #fff; }
-    .section__carousel-selectors .carousel-tab:nth-child(2) {
+    .cf_carousel_selectors .cf_carousel-tab:nth-child(2) {
       margin: 0 8px; }
 
-.section__pilars {
-  padding: 112px 0; }
-  .section__pilars .pilars-wrapper {
+.cf_pilars-section {
+  padding: 80px 0; }
+  @media only screen and (min-width: 765.01px) {
+    .cf_pilars-section {
+      background: lavender;
+      padding: 112px 0; } }
+  .cf_pilars-section .cf_pilars-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap; }
+    @media only screen and (min-width: 765.01px) {
+      .cf_pilars-section .cf_pilars-wrapper {
+        background: lavender;
+        justify-content: space-between;
+        flex-direction: row; } }
 
-.pilars-section__box {
+.cf_pilars-section_box {
   text-align: center;
-  flex-basis: 300px; }
-  .pilars-section__box .first-image {
+  flex-basis: 300px;
+  max-width: 300px;
+  margin: 0 auto; }
+  .cf_pilars-section_box .cf_first-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic1.png"); }
-  .pilars-section__box .second-image {
+  .cf_pilars-section_box .cf_second-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic2.png"); }
-  .pilars-section__box .third-image {
+  .cf_pilars-section_box .cf_third-image {
     background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic4.png"); }
-  .pilars-section__box .section-box__img {
+  .cf_pilars-section_box .cf_section-box_img {
     height: 134px;
     background-position: center;
     background-repeat: no-repeat; }
-    .pilars-section__box .section-box__img a {
+    .cf_pilars-section_box .cf_section-box_img a {
       display: block;
       width: 100%;
       height: 100%; }
-  .pilars-section__box .section-box__heading {
-    margin: 20px 0;
+  .cf_pilars-section_box .cf_section-box_heading {
+    margin: 20px 0 12px;
     font-size: 20px;
     font-weight: 900; }
-  .pilars-section__box .section-box__text {
+  .cf_pilars-section_box .cf_section-box_text {
     color: #5E5E5E;
     line-height: 24px;
     font-weight: 900; }

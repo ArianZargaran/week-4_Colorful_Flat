@@ -1,0 +1,17 @@
+.cf_carousel_selectors {
+  width: 85px;
+  margin: 0 auto;
+  .cf_carousel_selectors-tab {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    &:first-child {
+      background-color: #fff;
+    }
+    &:nth-child(2) {
+    margin: 0 8px;
+    }
+  }
+}
