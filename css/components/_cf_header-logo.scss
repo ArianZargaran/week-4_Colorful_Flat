@@ -1,6 +1,5 @@
 .cf_header-logo {
   margin: 0 auto;
-  padding-bottom: 10px;
   @include MQ(L){
   margin: 0;
   }
@@ -9,11 +8,6 @@
     text-decoration: none;
     color: var(--heading_text);
     font-size: 50px;
-    @include MQ(M){
-
-    }
-    @include MQ(L){
-    }
     .fa-heart{font-size: 45px;
       @include MQ(M){}
       @include MQ(L){font-size: 45px;}
