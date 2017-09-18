@@ -1,0 +1,22 @@
+.cf_templates_bottom-box {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  @include MQ(M) {
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+  .cf_templates-box_text {
+    margin-right: 2%;
+     a {
+       background-color: #A5D3DB;
+        }
+     }
+  }

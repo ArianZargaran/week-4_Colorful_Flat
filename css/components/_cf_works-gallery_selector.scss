@@ -1,0 +1,16 @@
+.cf_works-gallery_selector {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  flex-basis: 100px;
+  flex-wrap: wrap;
+  .cf_gallery-selector_item {
+    color: #fff;
+    letter-spacing: -1px;
+    padding: 10px 20px;
+    text-decoration: none;
+    &:first-child {
+    background: #7EBD8C;
+  }
+}
+}

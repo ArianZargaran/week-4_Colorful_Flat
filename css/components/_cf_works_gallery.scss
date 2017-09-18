@@ -1,0 +1,13 @@
+.cf_works_gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .cf_works_gallery-item {
+    width: 22%;
+    margin: 2% 2% 2% 0;
+  img {
+    display: block;
+    width: 100%;
+    }
+  }
+}
