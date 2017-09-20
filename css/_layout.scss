@@ -10,9 +10,9 @@ $L:     1178.01px;
    @media only screen and (min-width: $S) { @content; }
   }
   @else if $canvas == M {
-   @media only screen and (min-width: $M) { background: lavender; @content; }
+   @media only screen and (min-width: $M) { @content; }
   }
   @else if $canvas == L {
-   @media only screen and (min-width: $L) { background: green; @content; }
+   @media only screen and (min-width: $L) { @content; }
   }
 }

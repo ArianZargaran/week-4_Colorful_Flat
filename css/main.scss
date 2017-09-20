@@ -29,8 +29,8 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 
 //SECTION WORKS
 @import 'components/cf_works-section';
-@import 'components/cf_works-gallery_selector';
 @import 'components/cf_works_paragraph';
+@import 'components/cf_works-gallery_selector';
 @import 'components/cf_works_gallery';
 
 //SECTION_TEMPLATES
@@ -43,10 +43,9 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 
 //TEAM SECTION
 @import 'components/cf_team-section';
+@import 'components/_cf_team_paragraph';
 @import 'components/cf_team_wrapper';
-@import 'components/_cf_team-section_box';
-
-
+@import 'components/_cf_team_box';
 
 
 //POSTS SECTION

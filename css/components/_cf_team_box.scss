@@ -1,16 +1,17 @@
-.cf_team-section_box {
+.cf_team_box {
   text-align: center;
   background-color: white;
   width: 350px;
   margin: 1%;
   @include MQ(M){
-    margin: 0 1%;
+    margin: 0;
     width: 33%;}
   &:nth-child(2) {
-    margin: 2%;
-  @include MQ(M){margin: 0% 10%;}
+  @include MQ(M){
+    margin: 0 10%;
+    }
   }
-  .cf_section-box-image {
+  .cf_team-box_img {
     height: 213px;
     background-color: #E9E9E9;
     margin: 0 auto;
@@ -23,27 +24,27 @@
       background-position: center center;
     }
   }
-   .cf_section-box_name {
+   .cf_team-box_name {
       background-color: #fff;
       padding: 20px 0 10px;
       font-size: 25px;
       font-weight: 900;
       font-family: 'Trump';
       }
-  .cf_section-box_charge {
+  .cf_team-box_charge {
     padding: 10px 0;
     font-weight: 900;
     font-size: 20px;
   }
-  .cf_section-box_text {
+  .cf_team-box_text {
     padding: 10px;
     color: #8F8F8F;
     line-height: 22px;
     font-weight: 600;
   }
-  .cf_section-box_social-nav {
+  .cf_team-box_social-nav {
     padding: 10px 0 30px 0;
-    .cf_social-item {
+    .cf_team-box_social-item {
       padding: 10px;
       height: 46px;
       width: 47px;
