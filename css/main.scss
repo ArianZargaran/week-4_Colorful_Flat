@@ -30,7 +30,7 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 //SECTION WORKS
 @import 'components/cf_works-section';
 @import 'components/cf_works-gallery_selector';
-@import 'components/cf_section-works_paragraph';
+@import 'components/cf_works_paragraph';
 @import 'components/cf_works_gallery';
 
 //SECTION_TEMPLATES
@@ -41,73 +41,13 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 @import 'components/cf_templates-box_text';
 
 
-// <-- CLEAN THE THREAD
-
-
 //TEAM SECTION
-.cf_team-section {
-    background: var(--team);
-    padding: 77px 0 80px;
-}
+@import 'components/cf_team-section';
+@import 'components/cf_team_wrapper';
+@import 'components/_cf_team-section_box';
 
-.cf_team-wrapper {
-  padding: 65px 0 0 0;
-  display: flex;
-}
 
-.cf_team-section_box {
-  text-align: center;
-  width: 33%;
-  background-color: white;
-  &:nth-child(2) {
-    margin: 0 10%;
-  }
-  .cf_profile-image {
-    height: 213px;
-    background-color: #E9E9E9;
-    margin: 0 auto;
-    a {
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: url('https://p.w3layouts.com/demos/colorful_flat/web/images/people-pic.png') no-repeat;
-      background-size: 80px 80px;
-      background-position: center center;
-    }
-  }
-   .cf_section-box_name {
-      background-color: #fff;
-      padding: 20px 0 10px;
-      font-size: 25px;
-      font-weight: 900;
-      font-family: 'Trump';
-      }
-  .cf_section-box_charge {
-    padding: 10px 0;
-    font-weight: 900;
-    font-size: 20px;
-  }
-  .cf_section-box_text {
-    padding: 10px;
-    color: #8F8F8F;
-    line-height: 22px;
-    font-weight: 600;
-  }
-  .cf_social-nav {
-    padding: 10px 0 30px 0;
-    .cf_social-item {
-      padding: 10px;
-      height: 46px;
-      width: 47px;
-      font-size: 30px;
-      border-radius: 100%;
-      color: #fff;
-      &:nth-child(1) {background: #3234a3;}
-      &:nth-child(2) {background: #4ba5fa; margin: 0 10px;}
-      &:nth-child(3) {background: #ca0034;}
-      }
-    }
-  }
+
 
 //POSTS SECTION
 .cf_posts-section {

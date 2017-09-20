@@ -1,0 +1,9 @@
+.cf_team-wrapper {
+  padding: 65px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    @include MQ(M){
+      flex-direction: row;
+  }
+}

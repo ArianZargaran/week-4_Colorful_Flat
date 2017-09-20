@@ -1,0 +1,58 @@
+.cf_team-section_box {
+  text-align: center;
+  background-color: white;
+  width: 350px;
+  margin: 1%;
+  @include MQ(M){
+    margin: 0 1%;
+    width: 33%;}
+  &:nth-child(2) {
+    margin: 2%;
+  @include MQ(M){margin: 0% 10%;}
+  }
+  .cf_section-box-image {
+    height: 213px;
+    background-color: #E9E9E9;
+    margin: 0 auto;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: url('https://p.w3layouts.com/demos/colorful_flat/web/images/people-pic.png') no-repeat;
+      background-size: 80px 80px;
+      background-position: center center;
+    }
+  }
+   .cf_section-box_name {
+      background-color: #fff;
+      padding: 20px 0 10px;
+      font-size: 25px;
+      font-weight: 900;
+      font-family: 'Trump';
+      }
+  .cf_section-box_charge {
+    padding: 10px 0;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .cf_section-box_text {
+    padding: 10px;
+    color: #8F8F8F;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .cf_section-box_social-nav {
+    padding: 10px 0 30px 0;
+    .cf_social-item {
+      padding: 10px;
+      height: 46px;
+      width: 47px;
+      font-size: 30px;
+      border-radius: 100%;
+      color: #fff;
+      &:nth-child(1) {background: #3234a3;}
+      &:nth-child(2) {background: #4ba5fa; margin: 0 10px;}
+      &:nth-child(3) {background: #ca0034;}
+      }
+    }
+  }
