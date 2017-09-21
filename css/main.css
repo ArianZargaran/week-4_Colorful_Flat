@@ -534,7 +534,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-basis: 250px;
-  margin-right: 1%; }
+  margin: 0 2%; }
   .cf_footer_nav-social .cf_footer_nav-social-item {
     display: inline-block;
     text-decoration: none;
