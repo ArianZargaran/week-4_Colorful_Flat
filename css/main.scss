@@ -29,7 +29,6 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 
 //SECTION WORKS
 @import 'components/cf_works-section';
-@import 'components/cf_works_paragraph';
 @import 'components/cf_works-gallery_selector';
 @import 'components/cf_works_gallery';
 
@@ -43,65 +42,15 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 
 //TEAM SECTION
 @import 'components/cf_team-section';
-@import 'components/_cf_team_paragraph';
 @import 'components/cf_team_wrapper';
 @import 'components/_cf_team_box';
 
 
 //POSTS SECTION
-.cf_posts-section {
-  background: #b7d5e0;
-  padding: 77px 0 80px;
-.cf_posts-wrapper {
-  padding: 65px 0 0 0;
-  display: flex;
-  justify-content: space-between;
-  }
-}
-
-.cf_posts-section_box {
-  background: #fff;
-  text-align: center;
-  width: 30%;
-  .cf_posts-section_icon {
-    background-color: #E9E9E9;
-    margin: 0 auto;
-    height: 213px;
-    display: block;
-    background-image: url("https://p.w3layouts.com/demos/colorful_flat/web/images/post-icon.png");
-    background-repeat: no-repeat;
-    background-size: 80px 80px;
-    background-position: center center;}
-    .cf_section-box_heading {
-      padding: 25px 0 5px 0;
-      font-size: 30px;
-      font-weight: 900;
-    }
-    .cf_section-box_date {
-      font-style: italic;
-    }
-    .cf_section-box_paragraph {
-      margin: 0 auto;
-      padding: 15px 5px;
-      color: #909090;
-      width: 90%;
-      font-weight: 900;
-      line-height: 25px;
-    }
-  }
-
-  .cf_section_posts-cta {
-    display: block;
-    text-align: center;
-    padding: 28px 70px;
-    margin: 60px auto 0;
-    background: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 22px;
-    color: rgba(0,0,0,0.6);
-    letter-spacing: -.5px;
-  }
+@import 'components/_cf_posts_section.scss';
+@import 'components/_cf_posts-wrapper.scss';
+@import 'components/_cf_posts-section_box.scss';
+@import 'components/_cf_section_posts-cta.scss';
 
 //CONTACT SECTION
   .cf_contact-section {
@@ -130,25 +79,34 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
       height: 70px;
       margin-bottom: 20px;
       padding-left: 20px;
-      width: 60%;
+      width: 80%;
+      @include MQ(M){width: 75%;}
+      @include MQ(L){width: 70%;}
     }
     .cf_contact_form-email {
       height: 70px;
       margin-bottom: 20px;
       padding-left: 20px;
-      width: 60%;
+      width: 80%;
+      @include MQ(M){width: 75%;}
+      @include MQ(L){width: 70%;}
     }
     .cf_contact_form-message {
       height: 220px;
-      width: 60%;
       margin-bottom: 20px;
       padding-left: 20px;
       resize: none;
       padding-top: 16px;
+      width: 80%;
+      @include MQ(M){width: 75%;}
+      @include MQ(L){width: 70%;}
     }
     .cf_contact_form-button {
       padding: 30px 70px;
       color: rgba(0,0,0,.6);
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
 
@@ -159,9 +117,10 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
       border-top: .4px solid rgba(0,0,0,.2);
       padding: 15px 0;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      justify-content: center;
+      @include MQ(M){justify-content: space-between;}
     }
   }
 
@@ -169,6 +128,9 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
   display: flex;
   justify-content: space-between;
   flex-basis: 250px;
+  margin-right: 1%;
+  @include MQ(M){margin-right: 10%;}
+  @include MQ(L){margin-right: 0;}
   .cf_footer_nav-social-item {
     display: inline-block;
     text-decoration: none;
@@ -186,7 +148,5 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
 .cf_footer_legal {
   color: rgba(225,225,225,.6);
   padding: 12px 0;
-  .cf_footer_legal-yellow {
-    color: #FED67F;
-  }
+  font-size: 12px;
 }

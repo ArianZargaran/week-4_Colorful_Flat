@@ -1,9 +1,15 @@
 .cf_claim {
   text-align: center;
-  width: 40%;
   margin: 0 auto;
   padding-bottom: 38px;
   color: #eee;
   font-weight: 900;
   line-height: 22px;
+  width: 80%;
+@include MQ(M){
+  width: 60%
+}
+@include MQ(L){
+  width: 50%;
+}
 }

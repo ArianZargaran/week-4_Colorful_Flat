@@ -1,0 +1,16 @@
+.cf_section_posts-cta {
+  display: block;
+  text-align: center;
+  padding: 28px 70px;
+  margin: 60px auto 0;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  color: rgba(0,0,0,0.6);
+  letter-spacing: -.5px;
+  outline: none;
+  &:hover{
+    cursor: pointer;
+  }
+}

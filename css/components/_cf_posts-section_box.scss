@@ -1,0 +1,42 @@
+.cf_posts-section_box {
+  background: #fff;
+  text-align: center;
+  width: 30%;
+  text-align: center;
+  background-color: white;
+  width: 350px;
+  margin: 1%;
+  @include MQ(M){
+    margin: 0;
+    width: 33%;}
+  &:nth-child(2) {
+  @include MQ(M){
+    margin: 0 10%;
+    }
+  }
+  .cf_posts-section_icon {
+    background-color: #E9E9E9;
+    margin: 0 auto;
+    height: 213px;
+    display: block;
+    background-image: url("https://p.w3layouts.com/demos/colorful_flat/web/images/post-icon.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center center;}
+    .cf_section-box_heading {
+      padding: 25px 0 5px 0;
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .cf_section-box_date {
+      font-style: italic;
+    }
+    .cf_section-box_paragraph {
+      margin: 0 auto;
+      padding: 15px 5px;
+      color: #909090;
+      width: 90%;
+      font-weight: 900;
+      line-height: 25px;
+    }
+  }
