@@ -129,8 +129,6 @@ body {font-family: 'Open Sans', sans-serif; background: var(--backsite);}
   justify-content: space-between;
   flex-basis: 250px;
   margin-right: 1%;
-  @include MQ(M){margin-right: 10%;}
-  @include MQ(L){margin-right: 0;}
   .cf_footer_nav-social-item {
     display: inline-block;
     text-decoration: none;

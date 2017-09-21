@@ -535,12 +535,6 @@ body {
   justify-content: space-between;
   flex-basis: 250px;
   margin-right: 1%; }
-  @media only screen and (min-width: 765.01px) {
-    .cf_footer_nav-social {
-      margin-right: 10%; } }
-  @media only screen and (min-width: 1178.01px) {
-    .cf_footer_nav-social {
-      margin-right: 0; } }
   .cf_footer_nav-social .cf_footer_nav-social-item {
     display: inline-block;
     text-decoration: none;
