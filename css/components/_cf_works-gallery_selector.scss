@@ -9,8 +9,11 @@
     letter-spacing: -1px;
     padding: 10px 20px;
     text-decoration: none;
+    &:hover {
+    background: #7EBD8C;
+    }
     &:first-child {
     background: #7EBD8C;
+    }
   }
-}
 }

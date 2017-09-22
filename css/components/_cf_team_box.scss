@@ -19,7 +19,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      background: url('https://p.w3layouts.com/demos/colorful_flat/web/images/people-pic.png') no-repeat;
+      background: url('../style/team/people-pic.png') no-repeat;
       background-size: 80px 80px;
       background-position: center center;
     }
@@ -54,6 +54,10 @@
       &:nth-child(1) {background: #3234a3;}
       &:nth-child(2) {background: #4ba5fa; margin: 0 10px;}
       &:nth-child(3) {background: #ca0034;}
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.2);
+        }
       }
     }
   }

@@ -1,16 +1,19 @@
-.cf_section_posts-cta {
+.cf_posts-cta {
   display: block;
   text-align: center;
   padding: 28px 70px;
   margin: 60px auto 0;
-  background: #fff;
+  background-color: #fff;
   border: none;
   border-radius: 10px;
   font-size: 22px;
   color: rgba(0,0,0,0.6);
   letter-spacing: -.5px;
   outline: none;
+  transition: .2s ease-in-out;
   &:hover{
     cursor: pointer;
+    background-color: var(--works);
+    color: #fff;
   }
 }

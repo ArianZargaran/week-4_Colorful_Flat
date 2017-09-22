@@ -165,10 +165,10 @@ body {
     width: 20px;
     border: 2px solid #fff;
     border-radius: 100%; }
-    .cf_carousel_selectors .cf_carousel_selectors-tab:first-child {
-      background-color: #fff; }
     .cf_carousel_selectors .cf_carousel_selectors-tab:nth-child(2) {
       margin: 0 8px; }
+    .cf_carousel_selectors .cf_carousel_selectors-tab:hover {
+      background-color: #fff; }
 
 .cf_pilars-section {
   padding: 80px 0; }
@@ -191,11 +191,11 @@ body {
   max-width: 300px;
   margin: 0 auto; }
   .cf_pilars_box .cf_first-image {
-    background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic1.png"); }
+    background: url("../style/pilars/top-grid-pic1.png"); }
   .cf_pilars_box .cf_second-image {
-    background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic2.png"); }
+    background: url("../style/pilars/top-grid-pic2.png"); }
   .cf_pilars_box .cf_third-image {
-    background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/top-grid-pic4.png"); }
+    background: url("../style/pilars/top-grid-pic3.png"); }
   .cf_pilars_box .cf_pilars-box_img {
     height: 134px;
     background-position: center;
@@ -228,6 +228,8 @@ body {
     letter-spacing: -1px;
     padding: 10px 20px;
     text-decoration: none; }
+    .cf_gallery_selector .cf_gallery-selector_item:hover {
+      background: #7EBD8C; }
     .cf_gallery_selector .cf_gallery-selector_item:first-child {
       background: #7EBD8C; }
 
@@ -265,7 +267,7 @@ body {
   .cf_templates_top-box .cf_templates-box_text {
     margin-left: 2%; }
     .cf_templates_top-box .cf_templates-box_text a {
-      background-color: #9AD4A6; }
+      background-color: var(--works); }
 
 .cf_templates_bottom-box {
   padding-top: 60px;
@@ -285,13 +287,13 @@ body {
   .cf_templates_bottom-box .cf_templates-box_text {
     margin-right: 2%; }
     .cf_templates_bottom-box .cf_templates-box_text a {
-      background-color: #A5D3DB; }
+      background-color: var(--header); }
 
 .cf_templates_img {
   min-width: 336px;
   height: 268px;
   border-radius: 17px;
-  background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/blog-pic1.png") no-repeat; }
+  background: url("../style/templates/blog-pic1.png") no-repeat; }
 
 .cf_templates-box_text .cf_templates_text-heading {
   font-size: 30px;
@@ -354,7 +356,7 @@ body {
       display: block;
       height: 100%;
       width: 100%;
-      background: url("https://p.w3layouts.com/demos/colorful_flat/web/images/people-pic.png") no-repeat;
+      background: url("../style/team/people-pic.png") no-repeat;
       background-size: 80px 80px;
       background-position: center center; }
   .cf_team_box .cf_team-box_name {
@@ -388,6 +390,9 @@ body {
         margin: 0 10px; }
       .cf_team_box .cf_team-box_social-nav .cf_team-box_social-item:nth-child(3) {
         background: #ca0034; }
+      .cf_team_box .cf_team-box_social-nav .cf_team-box_social-item:hover {
+        cursor: pointer;
+        filter: brightness(1.2); }
 
 .cf_posts-section {
   background: #b7d5e0;
@@ -423,7 +428,7 @@ body {
     margin: 0 auto;
     height: 213px;
     display: block;
-    background-image: url("https://p.w3layouts.com/demos/colorful_flat/web/images/post-icon.png");
+    background-image: url("../style/posts/post-icon.png");
     background-repeat: no-repeat;
     background-size: 80px 80px;
     background-position: center center; }
@@ -441,20 +446,23 @@ body {
     font-weight: 900;
     line-height: 25px; }
 
-.cf_section_posts-cta {
+.cf_posts-cta {
   display: block;
   text-align: center;
   padding: 28px 70px;
   margin: 60px auto 0;
-  background: #fff;
+  background-color: #fff;
   border: none;
   border-radius: 10px;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.6);
   letter-spacing: -.5px;
-  outline: none; }
-  .cf_section_posts-cta:hover {
-    cursor: pointer; }
+  outline: none;
+  transition: .2s ease-in-out; }
+  .cf_posts-cta:hover {
+    cursor: pointer;
+    background-color: var(--works);
+    color: #fff; }
 
 .cf_contact-section {
   background: var(--contact);
@@ -513,9 +521,12 @@ body {
       width: 70%; } }
 .cf_contact_form .cf_contact_form-button {
   padding: 30px 70px;
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.6);
+  transition: .2s ease-in-out; }
   .cf_contact_form .cf_contact_form-button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: var(--team);
+    color: #fff; }
 
 .cf_footer-section {
   background: var(--contact); }
@@ -543,6 +554,8 @@ body {
     background: rgba(225, 225, 225, 0.2);
     padding: 12px;
     border-radius: 100%; }
+    .cf_footer_nav-social .cf_footer_nav-social-item:hover {
+      background: rgba(225, 225, 225, 0.5); }
     .cf_footer_nav-social .cf_footer_nav-social-item:nth-child(2) {
       padding: 12px 17px; }
 

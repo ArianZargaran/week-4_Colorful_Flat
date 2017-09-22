@@ -1,0 +1,21 @@
+.cf_footer_nav-social {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 250px;
+  margin: 0 2%;
+  .cf_footer_nav-social-item {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 35px;
+    color: var(--contact);
+    background: rgba(225,225,225,.2);
+    padding: 12px;
+    border-radius: 100%;
+    &:hover {
+      background: rgba(225,225,225,.5);
+    }
+    &:nth-child(2){
+      padding: 12px 17px;
+    }
+  }
+}
